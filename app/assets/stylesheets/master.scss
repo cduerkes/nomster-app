@@ -30,7 +30,13 @@ body {
 }
 
 .navbar-inverse .navbar-brand {
-  color: rgba(240,242,235, 1);
+  color: #F0F2EB;
   font-family: 'Codystar', cursive;
   font-size: 36px;
+}
+
+.nav-item {
+  color: #F0F2EB;
+  font-size: 16px;
+  margin-left: 10px;
 }

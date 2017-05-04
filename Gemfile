@@ -60,8 +60,6 @@ source 'https://rails-assets.org' do
 end
 
 gem 'simple_form'
-
-# include kaminari paginator
 gem 'kaminari'
-
 gem 'font-awesome-rails'
+gem 'devise'
