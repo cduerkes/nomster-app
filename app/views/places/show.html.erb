@@ -38,4 +38,12 @@
       <%= link_to 'Destroy', place_path(@place), method: :delete, data: {confirm: 'Are you sure you want to delete this?'}, class: 'btn btn-danger' %>
     <% end %>
   </div>
+  <div class="clear"></div>
+  <%= simple_form_for @comment, url: '#' do |f| %>
+    <%= f.input :message %>
+    <%= f.input :rating %>
+    <%= f.submit "Add a comment", class: 'btn btn-primary' %>
+  <% end %>
 </div>
+
+<!-- Should this be inside previous div?-->
