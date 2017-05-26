@@ -73,7 +73,7 @@
 <div class="col-10 offset-1">
   <h1 class="float-left">Comments</h1>
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#exampleModal">
+  <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#exampleModal">
     Add a comment
   </button>
 </div>
@@ -122,7 +122,7 @@
   <div class="col-10 offset-1">
     <h1 class="float-left">Photos</h1>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#photoButton">
+    <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#photoButton">
       Add a photo
     </button>
   </div>
@@ -131,8 +131,8 @@
 
   <div class="row">
     <% @place.photos.each do |photo| %>
-      <div class="col-12">
-        <%= image_tag photo.picture %>
+      <div class="col-12 col-sm-6">
+        <%= image_tag photo.picture, :class => 'img-fluid'  %>
         <%= photo.caption %>
       </div>
     <% end %>

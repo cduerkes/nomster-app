@@ -1,5 +1,10 @@
 <% @places.each do |place| %>
   <div class="booyah-box col-10 offset-1">
+
+    <div class="img_index">
+      <%= image_tag place.photos.last.picture, :class => 'img-fluid' %>
+    </div>
+
     <h1><%= link_to place.name, place_path(place) %></h1><br />
     <i><%= place.address %></i><br />
     <p><%= place.description %></p><br />
