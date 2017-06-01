@@ -7,13 +7,13 @@
     <div class="carousel-item active">
       <%= image_tag 'slider1.jpg', class: 'd-block img-fluid' %>
       <div class="carousel-caption d-none d-md-block">
-        <h3>The best corn whiskey in the Hudson Valley</h3>
+        <h3>Corn whiskey!</h3>
       </div>
     </div>
     <div class="carousel-item">
       <%= image_tag 'slider2.jpg', class: 'd-block img-fluid' %>
       <div class="carousel-caption d-none d-md-block">
-        <h3>The best corn whiskey in the Hudson Valley</h3>
+        <h3>Cacao liquer!</h3>
       </div>
     </div>
   </div>
@@ -30,14 +30,15 @@
 <% @places.each do |place| %>
   <div class="booyah-box col-10 offset-1">
 
+<% if false %>
     <div class="img_index">
       <% if place.photos.present? %>
         <%= image_tag place.photos.last.picture, :class => 'img-fluid' %>
       <% end %>
     </div>
+<% end %>
 
-
-    <h1><%= link_to place.name, place_path(place) %></h1><br />
+    <h1 id="h1-places"><%= link_to place.name, place_path(place) %></h1><br />
     <i><%= place.address %></i><br />
     <p><%= place.description %></p><br />
 
