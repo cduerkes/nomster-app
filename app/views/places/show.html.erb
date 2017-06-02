@@ -1,7 +1,7 @@
 <div class="booyah-box" col-10 offset-1>
 
-  
-  <h1><%= @place.name %></h1>
+  <br />
+  <h1 id="pecita"><%= @place.name %></h1>
   <i><%= @place.address %></i>
   <br /><br />
   <p><%= @place.description %></p>
@@ -69,9 +69,9 @@
     </div>
   </div>
 </div>
-
+<br />
 <div class="col-10 offset-1">
-  <h1 class="float-left">Comments</h1>
+  <h1 id="pecita" class="float-left">Comments</h1>
   <!-- Button trigger modal -->
   <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#exampleModal">
     Add a comment
@@ -120,7 +120,7 @@
   </div>
 
   <div class="col-10 offset-1">
-    <h1 class="float-left">Photos</h1>
+    <h1 id="pecita" class="float-left">Photos</h1>
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#photoButton">
       Add a photo
