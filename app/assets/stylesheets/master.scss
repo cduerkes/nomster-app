@@ -26,15 +26,41 @@ body {
 }
 
 .navbar {
+  min-height: 50px;
   background: image_url('ignasi_pattern_bw.png');
   box-shadow: 3px 3px 2px #888888;
   margin-bottom: 0;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.navbar-inverse .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, .75);
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 8px;
+  padding: 9px 10px !important;
 }
 
 .navbar-inverse .navbar-brand {
   color: rgba(255, 255, 255, 1);
   font-family: 'Codystar', cursive;
   font-size: 2.5em;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
+    line-height: 12px;
+  }
 }
 
 .nav-item {
@@ -104,14 +130,14 @@ blockquote p {
   font-size: 60px;
   font-weight: 100; 
   text-shadow: rgba(0, 0, 0, 0.95) 2px 2px; */
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, .95);
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   width: 700px;
-  padding: 15px;
+  padding: 10px;
 }
 
 .carousel {
