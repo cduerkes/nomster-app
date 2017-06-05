@@ -15,7 +15,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Codystar', cursive;
+  font-family: pecita, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -30,6 +30,7 @@ body {
   background: image_url('ignasi_pattern_bw.png');
   box-shadow: 3px 3px 2px #888888;
   margin-bottom: 0;
+  font-family: 'Codystar', cursive;
 }
 
 .navbar-brand {
@@ -50,7 +51,7 @@ body {
 
 .navbar-inverse .navbar-brand {
   color: rgba(255, 255, 255, 1);
-  font-family: 'Codystar', cursive;
+
   font-size: 2.5em;
 }
 
@@ -65,7 +66,6 @@ body {
 
 .nav-item {
   color: rgba(255, 255, 255, 1);
-  font-family: 'Codystar', cursive;
   font-size: 1.25em;
   margin-left: 10px;
 }
@@ -144,12 +144,14 @@ blockquote p {
   box-shadow: 0px 3px 8px #2a2a2a;
 }
 
-#pecita a {
+#black a {
   color: black;
-  font-family: pecita, sans-serif;
 }
 
-#pecita {
+#black {
   color: black;
-  font-family: pecita, sans-serif;
+}
+
+#codystar {
+  font-family: 'Codystar', cursive;
 }
