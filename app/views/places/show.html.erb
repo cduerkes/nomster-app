@@ -131,8 +131,8 @@
 
   <div class="row">
     <% @place.photos.each do |photo| %>
-      <div class="col-6">
-        <%= image_tag photo.picture, :class => 'small-image'  %>
+      <div class="photo col-6">
+        <%= image_tag photo.picture, :class => 'small-image' %>
         <%= photo.caption %>
       </div>
     <% end %>

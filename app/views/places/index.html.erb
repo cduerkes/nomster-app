@@ -5,16 +5,10 @@
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-      <%= image_tag 'slider9.jpg', class: 'd-block img-fluid' %>
-      <div class="carousel-caption d-none d-md-block">
-        <h3 id="codystar">Lorem ipsum</h3>
-      </div>
+      <%= image_tag 'slider1.jpg', class: 'd-block img-fluid' %>
     </div>
     <div class="carousel-item">
-      <%= image_tag 'slider10b.jpg', class: 'd-block img-fluid' %>
-      <div class="carousel-caption d-none d-md-block">
-        <h3 id="codystar">Lorem ipsum</h3>
-      </div>
+      <%= image_tag 'slider10.jpg', class: 'd-block img-fluid' %>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -38,7 +32,7 @@
     </div>
 <% end %>
 
-    <h1 id="black"><%= link_to place.name, place_path(place) %></h1><br />
+    <h1 class="black"><%= link_to place.name, place_path(place) %></h1><br />
     <i><%= place.address %></i><br />
     <p><%= place.description %></p><br />
 

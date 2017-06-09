@@ -8,5 +8,20 @@
          font_url('pecita-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'cooperhewitt-bk';
+    src: font_url('cooperhewitt-book-webfont.woff2') format('woff2'),
+         font_url('cooperhewitt-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cooperhewitt-sb';
+    src: font_url('cooperhewitt-semibold-webfont.woff2') format('woff2'),
+         font_url('cooperhewitt-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }

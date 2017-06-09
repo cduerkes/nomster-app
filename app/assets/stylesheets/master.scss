@@ -30,7 +30,7 @@ body {
   background: image_url('ignasi_pattern_bw.png');
   box-shadow: 3px 3px 2px #888888;
   margin-bottom: 0;
-  font-family: 'Codystar', cursive;
+  font-family: Codystar, sans-serif;
 }
 
 .navbar-brand {
@@ -40,7 +40,7 @@ body {
 }
 
 .navbar-inverse .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, .75);
+  color: rgba(255, 255, 255, .85);
 }
 
 .navbar-toggle {
@@ -118,11 +118,13 @@ blockquote p {
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
   margin-top: 10px;
-  height: 500px;
+  height: 450px;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
+
+  /*  max-height: 700px; */
 }
 
 .carousel-caption {
@@ -130,25 +132,25 @@ blockquote p {
   font-size: 60px;
   font-weight: 100; 
   text-shadow: rgba(0, 0, 0, 0.95) 2px 2px; */
-  background-color: rgba(0, 0, 0, .95);
+  background-color: rgba(204, 0, 0, .85);
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  width: 700px;
-  padding: 10px;
+  width: 1400px;
+  padding: 11px;
 }
 
 .carousel {
   box-shadow: 0px 3px 8px #2a2a2a;
 }
 
-#black a {
+.black a {
   color: black;
 }
 
-#black {
+.black {
   color: black;
 }
 
@@ -156,6 +158,23 @@ blockquote p {
   font-family: 'Codystar', cursive;
 }
 
+#cooperhewitt-bk {
+  font-family: 'cooperhewitt-bk', sans-serif;
+}
+
+#cooperhewitt-sb {
+  font-family: 'cooperhewitt-sb', sans-serif;
+}
+
 .small-image {
   width: 100%;
+}
+
+.photo {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
 }
